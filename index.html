@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Lottie</title>
+    <style>
+        Body {
+            Font-family: Arial, sans-serif;
+            Max-width: 600px;
+            Margin: auto;
+            Padding: 20px;
+            Border: 1px solid #ccc;
+            Border-radius: 10px;
+            Box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            Text-align: center;
+        }
+        H1 {
+            Color: #ff4d4d;
+        }
+        .response {
+            Display: none;
+            Margin-top: 20px;
+            Padding: 10px;
+            Border-radius: 5px;
+            Font-weight: bold;
+        }
+        .yes {
+            Background-color: #d4edda;
+            Color: #155724;
+        }
+        .no {
+            Background-color: #f8d7da;
+            Color: #721c24;
+        }
+        .buttons {
+            Margin-top: 20px;
+        }
+        Button {
+            Font-size: 16px;
+            Padding: 10px;
+            Margin: 5px;
+            Border: none;
+            Border-radius: 5px;
+            Cursor: pointer;
+        }
+        .yes-btn {
+            Background-color: #28a745;
+            Color: white;
+        }
+        .no-btn {
+            Background-color: #dc3545;
+            Color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>HAII Charlotte,</h1>
+    <p>Alam kong ang weird dahil naka HTML bwhahahah tinry ko lang dahil mag IT ako, pero gusto ko lang sabihin na sobrang saya ko tuwing nakakausap kita. Kahit simpleng usapan lang, parang ang gaan sa pakiramdam, at mas lalo kitang gustong makilala nang mas mabuti hihi.</p>
+    <p>Dahil don, gusto ko sanang tanungin <strong>Pwede ba manligaw??</strong> </p>
+    <p>Alam kong hindi ‘to biro, kaya gusto kong iparamdam sayo na seryoso ako. Hindi lang dahil gusto kita, kundi dahil kahit anong mangyari, ikaw pa rin at ikaw LANG ang gusto ko. Deserve mo ang tunay na effort at respeto :)</p>
+    <p>Ano man ang sagot mo, tatanggapin at rerespetuhin ko. Pero syempre, umaasa akong bigyan mo ako ng chance HAAHAHHAAH</p>
+    <p>From the one who puts you first, always</p>
+    <p><strong>-Eriz</strong></p>
+    
+    <h2>Response:</h2>
+    <div class=”buttons”>
+        <button class=”yes-btn” onclick=”showResponse(‘yes’)”>YES</button>
+        <button class=”no-btn” onclick=”showResponse(‘no’)”>NO</button>
+    </div>
+
+    <div class=”response yes” id=”yes-response”>
+        <p>Halaaa, totoo ba to? o izzaprank lang HWHAHAHAHAH thank you, lotlot.  Simula ngayon, mas lalo pa kitang aasarin. CHAROTT</p>
+    </div>
+    
+    <div class=”response no” id=”no-response”>
+        <p>Araw ko po pero sige, I’ll still be here kung magbago isip mo hehehehe. </p>
+    </div>
+
+    <script>
+        Function showResponse(answer) {
+            Document.getElementById(‘yes-response’).style.display = ‘none’;
+            Document.getElementById(‘no-response’).style.display = ‘none’;
+            
+            If (answer === ‘yes’) {
+                Document.getElementById(‘yes-response’).style.display = ‘block’;
+            } else {
+                Document.getElementById(‘no-response’).style.display = ‘block’;
+            }
+        }
+    </script>
+</body>
+</html>
